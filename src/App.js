@@ -5,10 +5,11 @@ import QuickForm from './QuickForm';
 import FlavorList from './FlavorList';
 
 function App() {
+  
   return (
     <AppProvider>
       <div className="App">
-        <QuickForm/>
+        <QuickForm addFlavor={() => console.log(falve)}/>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <FlavorList/>
