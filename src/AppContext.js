@@ -11,21 +11,11 @@ class AppProvider extends React.Component {
  constructor(props){
    super(props);
    this.state = {
-     flavors: ["mint"],
+     flavors: [],
      addFlavor: this.addFlavor.bind(this),
    };
    
  }
-  
-  componentDidMount(){
-
-  }
-  
-  addFlavor(value){
-      const newFlavors = [...this.state.flavors, value];
-      this.setState({flavors:newFlavors})
-    
-  }
 
 
   
