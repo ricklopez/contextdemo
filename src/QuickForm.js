@@ -4,9 +4,11 @@ import {AppContext} from './AppContext';
 
 export default class QuickForm extends Component {
 
-
+  static context = AppContext.consumer;
   handleSubmit = (ev) => {
     ev.preventDefault()
+    
+    this.context.addFlavor(ev.target.flavor);
    
   }
 
