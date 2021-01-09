@@ -1,14 +1,14 @@
   
 import React, { Component } from 'react'
-import {AppContext} from './AppContext';
 
 export default class QuickForm extends Component {
 
-  static context = AppContext.consumer;
+
   handleSubmit = (ev) => {
+    const data = ev.target.flavor;
     ev.preventDefault()
     
-    this.context.addFlavor(ev.target.flavor)
+
    
   }
 
