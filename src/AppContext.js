@@ -16,7 +16,11 @@ class AppProvider extends React.Component {
    };
    
  }
-
+addFlavor(flavor){
+      const newFlavors = [...this.state.flavors, flavor];
+      this.setState({flavors:newFlavors})
+    
+  }
 
   
   render(){
