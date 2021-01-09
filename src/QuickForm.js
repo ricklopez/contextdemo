@@ -8,7 +8,7 @@ export default class QuickForm extends Component {
   handleSubmit = (ev) => {
     ev.preventDefault()
     
-    this.props.addFlavor(ev.target.flavor)
+    this.context.addFlavor(ev.target.flavor)
    
   }
 
